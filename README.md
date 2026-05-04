@@ -4,7 +4,7 @@ Universal Include for FASM (by Tomasz Grysztar).
 Since the file contains macros for both the kernel (e.g., `vprint`, `isr_wrapper`) and Linux user-space (`SYS_WRITE`, `unisys`), it is impossible to meaningfully use all of them in a single executable context. Below is a user-space program example demonstrating the power of the HLL macros, structure manipulation, memory management, and system calls.
 
 ```assembly
-include 'uniinc.inc'
+include 'universal.inc'
 
 ; Defining a custom structure using type macros
 struct UserData
