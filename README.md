@@ -34,7 +34,7 @@ _start:
     kmalloc 1024
     
     ; 4. Using HLL branching (.if / .else)
-    .if rax == 0
+    .if rax = 0
         unisys SYS_WRITE, 1, msg_err, 14
         jmp .exit
     .else
