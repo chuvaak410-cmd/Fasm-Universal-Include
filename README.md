@@ -50,7 +50,7 @@ _start:
     mov rsi, 0
     .for rsi, <, 10, +, 1
         ; You can nest other HLL structures inside the loop
-        .if [rbx + UserData.active] == 1
+        .if [rbx + UserData.active] = 1
             ; Execute payload
             inc [rbx + UserData.id]
         .endif
